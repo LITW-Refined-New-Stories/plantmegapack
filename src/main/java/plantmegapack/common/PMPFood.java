@@ -1,0 +1,117 @@
+package plantmegapack.common;
+
+public enum PMPFood {
+
+    foodBeautyberry("berriesBeauty", PMPFoodType.basic, 1, 0.1F, 0, false),
+    foodBlackberry("berriesBlack", PMPFoodType.basic, 1, 0.1F, 0, false),
+    foodBlueberry("berriesBlue", PMPFoodType.basic, 1, 0.1F, 0, false),
+    foodElderberry("berriesElder", PMPFoodType.basic, 1, 0.1F, 0, false),
+    foodGooseberry("berriesGoose", PMPFoodType.basic, 1, 0.1F, 0, false),
+    foodHarlequinmistletoeberry("berriesHarlequinMistletoe", PMPFoodType.basic, 1, 0.1F, 0, false),
+    foodHuckleberry("berriesHuckle", PMPFoodType.basic, 1, 0.1F, 0, false),
+    foodOrangeberry("berriesOrange", PMPFoodType.basic, 1, 0.1F, 0, false),
+    foodSnowberry("berriesSnow", PMPFoodType.basic, 1, 0.1F, 0, false),
+    foodStrawberry("berriesStraw", PMPFoodType.basic, 1, 0.1F, 0, false),
+    foodBeet("foodBeet", PMPFoodType.crop, 2, 0.4F, 0, false),
+    foodBellPepperOrange("foodBellPepperOrange", PMPFoodType.crop, 2, 0.4F, 0, true),
+    foodBellPepperRed("foodBellPepperRed", PMPFoodType.crop, 2, 0.4F, 0, true),
+    foodBellPepperYellow("foodBellPepperYellow", PMPFoodType.crop, 2, 0.4F, 0, true),
+    foodBroccoli("foodBroccoli", PMPFoodType.crop, 2, 0.4F, 0, true),
+    foodCassavaRoot("foodCassavaRoot", PMPFoodType.crop, 2, 0.4F, 0, true),
+    foodCelery("foodCelery", PMPFoodType.crop, 2, 0.4F, 0, false),
+    foodCentellaLeaves("foodCentellaLeaves", PMPFoodType.crop, 2, 0.4F, 0, false),
+    foodCorn("foodCorn", PMPFoodType.crop, 2, 0.4F, 0, true),
+    foodCucumber("foodCucumber", PMPFoodType.crop, 2, 0.4F, 0, false),
+    foodEggplant("foodEggplant", PMPFoodType.crop, 2, 0.4F, 0, true),
+    foodGreenBeans("foodGreenBeans", PMPFoodType.crop, 2, 0.3F, 0, true),
+    foodLaksaLeaves("foodLaksaLeaves", PMPFoodType.crop, 1, 0.1F, 0, false),
+    foodLeek("foodLeek", PMPFoodType.crop, 2, 0.4F, 0, true),
+    foodLettuce("foodLettuce", PMPFoodType.crop, 2, 0.4F, 0, false),
+    foodMozuku("foodMozukuSeaweed", PMPFoodType.aquatic, 1, 0.2F, 0, false),
+    foodOnion("foodOnion", PMPFoodType.crop, 2, 0.4F, 0, true),
+    foodPeanuts("foodPeanuts", PMPFoodType.crop, 2, 0.3F, 0, false),
+    foodPricklyPearFruit("foodPricklyPearFruit", PMPFoodType.basic, 2, 0.4F, 0, false),
+    foodQuinoaSeeds("foodQuinoaSeeds", PMPFoodType.basic, 1, 0.1F, 0, false),
+    foodRice("foodRice", PMPFoodType.crop, 1, 0.1F, 0, false),
+    foodSacredLotusRoot("foodSacredLotusRoot", PMPFoodType.crop, 2, 0.3F, 0, true),
+    foodSorrel("foodSorrel", PMPFoodType.crop, 2, 0.4F, 0, false),
+    foodSpinach("foodSpinach", PMPFoodType.crop, 2, 0.4F, 0, false),
+    foodTomato("foodTomato", PMPFoodType.crop, 2, 0.4F, 0, true),
+    foodTaroRoot("foodTaroRoot", PMPFoodType.crop, 2, 0.4F, 0, true),
+    foodWasabiStem("foodWasabiStem", PMPFoodType.crop, 2, 0.4F, 0, true),
+    foodWaterChestnut("foodWaterChestnut", PMPFoodType.basic, 1, 0.1F, 0, false),
+    foodWatercress("foodWatercress", PMPFoodType.crop, 2, 0.4F, 0, false),
+    foodWildRice("foodWildRice", PMPFoodType.crop, 1, 0.1F, 0, false),
+    foodCookedRice("foodCookedRice", PMPFoodType.crop, 4, 0.4F, 0, false),
+    foodCornFlour("foodCornFlour", PMPFoodType.crop, 2, 0.6F, 0, false),
+    foodCornBread("foodCornBread", PMPFoodType.crop, 5, 0.6F, 0, false),
+    foodWrapCorn("wrapCorn", PMPFoodType.crop, 3, 0.6F, 0, false),
+    foodWrapSeaweed("wrapSeaweed", PMPFoodType.aquatic, 1, 0.3F, 0, false),
+    foodBeetSoup("foodBeetSoup", PMPFoodType.crop, 4, 0.6F, 1, false),
+    foodBerrybowl("foodBerrybowl", PMPFoodType.basic, 3, 0.3F, 1, false),
+    foodBroccoliSoup("foodBroccoliSoup", PMPFoodType.crop, 4, 0.6F, 1, false),
+    foodElderberrySorbet("foodElderberrySorbet", PMPFoodType.basic, 7, 0.8F, 1, false),
+    foodMozukuSoup("foodMozukuSoup", PMPFoodType.aquatic, 4, 0.6F, 1, false),
+    foodSnowberryCustard("foodSnowberryCustard", PMPFoodType.basic, 7, 0.8F, 1, false),
+    foodQuinoaCereal("foodQuinoaCereal", PMPFoodType.basic, 4, 0.4F, 1, false),
+    foodTomatoSoup("foodTomatoSoup", PMPFoodType.crop, 4, 0.6F, 1, false),
+    foodBeautyberryTurnover("foodBeautyberryTurnover", PMPFoodType.basic, 7, 0.8F, 0, false),
+    foodBlackberryDanish("foodBlackberryDanish", PMPFoodType.basic, 7, 0.8F, 0, false),
+    foodBlueberryMuffin("foodBlueberryMuffin", PMPFoodType.basic, 3, 0.3F, 0, false),
+    foodGooseberryCobbler("foodGooseberryCobbler", PMPFoodType.basic, 7, 0.8F, 0, false),
+    foodHuckleberryTart("foodHuckleberryTart", PMPFoodType.basic, 7, 0.8F, 0, false),
+    foodOrangeberrySquare("foodOrangeberrySquare", PMPFoodType.basic, 7, 0.8F, 0, false),
+    foodCookiePeanutButter("foodCookiePeanutButter", PMPFoodType.basic, 2, 0.1F, 0, false),
+    foodStrawberryDelight("foodStrawberryDelight", PMPFoodType.basic, 7, 0.8F, 0, false),
+    foodJelly("foodJelly", PMPFoodType.basic, 4, 0.6F, 2, false),
+    foodPeanutButter("foodPeanutButter", PMPFoodType.basic, 4, 0.6F, 2, false),
+    foodStuffedPepperOrange("foodStuffedPepperOrange", PMPFoodType.basic, 7, 0.8F, 0, false),
+    foodStuffedPepperRed("foodStuffedPepperRed", PMPFoodType.basic, 7, 0.8F, 0, false),
+    foodStuffedPepperYellow("foodStuffedPepperYellow", PMPFoodType.basic, 7, 0.8F, 0, false),
+    foodSandwichPBJ("foodSandwichPBJ", PMPFoodType.basic, 8, 0.8F, 0, false),
+    foodSandwichBeef("foodSandwichBeef", PMPFoodType.basic, 8, 0.8F, 0, false),
+    foodSandwichChicken("foodSandwichChicken", PMPFoodType.basic, 8, 0.8F, 0, false),
+    foodSandwichFish("foodSandwichFish", PMPFoodType.basic, 8, 0.8F, 0, false),
+    foodSandwichMutton("foodSandwichMutton", PMPFoodType.basic, 8, 0.8F, 0, false),
+    foodSandwichPork("foodSandwichPork", PMPFoodType.basic, 8, 0.8F, 0, false),
+    foodBeautyberryBlazer("foodBeautyberryBlazer", PMPFoodType.drink, 8, 0.8F, 2, false),
+    foodBlackberryTumbler("foodBlackberryTumbler", PMPFoodType.drink, 8, 0.8F, 2, false),
+    foodBlueberrySlushie("foodBlueberrySlushie", PMPFoodType.drink, 8, 0.8F, 2, false),
+    foodElderberrySpritzer("foodElderberrySpritzer", PMPFoodType.drink, 8, 0.8F, 2, false),
+    foodGooseberryShake("foodGooseberryShake", PMPFoodType.drink, 8, 0.8F, 2, false),
+    foodHarlequinFizz("foodHarlequinFizz", PMPFoodType.drink, 8, 0.8F, 2, false),
+    foodHuckleberryBubbler("foodHuckleberryBubbler", PMPFoodType.drink, 8, 0.8F, 2, false),
+    foodOrangeberryWhip("foodOrangeberryWhip", PMPFoodType.drink, 8, 0.8F, 2, false),
+    foodPricklyPearTwister("foodPricklyPearTwister", PMPFoodType.drink, 8, 0.8F, 2, false),
+    foodSnowberryCooler("foodSnowberryCooler", PMPFoodType.drink, 8, 0.8F, 2, false),
+    foodStrawberrySmoothie("foodStrawberrySmoothie", PMPFoodType.drink, 8, 0.8F, 2, false),
+    foodWasabiQuencher("foodWasabiQuencher", PMPFoodType.drink, 8, 0.8F, 2, false),
+    wrapCornBeef("wrapCornBeef", PMPFoodType.crop, 10, 1.0F, 0, false),
+    wrapCornChicken("wrapCornChicken", PMPFoodType.crop, 10, 1.0F, 0, false),
+    wrapCornFish("wrapCornFish", PMPFoodType.crop, 10, 1.0F, 0, false),
+    wrapCornPork("wrapCornPork", PMPFoodType.crop, 10, 1.0F, 0, false),
+    wrapCornRice("wrapCornRice", PMPFoodType.crop, 9, 1.0F, 0, false),
+    wrapSeaweedBeef("wrapBeef", PMPFoodType.aquatic, 10, 1.0F, 0, false),
+    wrapSeaweedChicken("wrapChicken", PMPFoodType.aquatic, 10, 1.0F, 0, false),
+    wrapSeaweedFish("wrapFish", PMPFoodType.aquatic, 10, 1.0F, 0, false),
+    wrapSeaweedPork("wrapPork", PMPFoodType.aquatic, 10, 1.0F, 0, false),
+    wrapSeaweedRice("wrapRice", PMPFoodType.aquatic, 9, 1.0F, 0, false),
+    foodStirFry("foodStirFry", PMPFoodType.basic, 10, 1.0F, 1, false);
+
+    public final String unlocalizedName;
+    public final PMPFoodType foodType;
+    public final int foodValue;
+    public final float saturation;
+    public final int returnObject;
+    public final boolean stirFry;
+
+    private PMPFood(String unlocalizedName, PMPFoodType foodType, int foodValue, float saturation, int returnObject,
+        boolean stirFry) {
+        this.unlocalizedName = unlocalizedName;
+        this.foodType = foodType;
+        this.foodValue = foodValue;
+        this.saturation = saturation;
+        this.returnObject = returnObject;
+        this.stirFry = stirFry;
+    }
+}

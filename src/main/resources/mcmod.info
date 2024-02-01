@@ -1,0 +1,21 @@
+{
+	"modListVersion": 2,
+	"modList": [{
+		"modid": "${modId}",
+		"name": "${modName}",
+		"description": "Add a large variety of real plants",
+		"version": "${modVersion}",
+		"mcversion": "${minecraftVersion}",
+		"url": "https://github.com/Pilzinsel64/plantmegapack",
+		"updateUrl": "",
+		"authorList": ["Pilzinsel64", "10paktimbits"],
+		"credits": "",
+		"logoFile": "plantmegapack.png",
+		"screenshots": [],
+		"parent": "",
+		"requiredMods": [],
+		"dependencies": [],
+		"dependants": [],
+		"useDependencyInformation": true
+	}]
+}
